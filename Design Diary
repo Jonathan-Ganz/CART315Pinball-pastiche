@@ -1,0 +1,11 @@
+Base game is a light based exploartion/puzzle challenge games played from the top down, where the plyaer's mastery of controls and avoidance of dangers will lead them to victory.
+Based on prototype playtesters, various tweaks and changes.
+1. walls need to be higher or invisible to stop complete seperation of player and playing field
+2. RESOLVED Ball was being destroyed by stuck countermeasure when idle for too long
+3. Light emission from ball was well recieved, levels need to be played with as well as how the player can control or interact with light and its impact on the playing field.
+4. Height and form of level should be unique and fun
+5. Mystery and atmosphere are good setting, but when on the right path it should be clear to the player.
+Allowing the player to spread light across the level would create beautiful and thematic "checkpoints" to note where the player has already been.
+Potential to add the fading of light emission from ball as a timer or loss condition.
+Added FX to trail the ball and match the mood lighting.
+Added the dynamic changing of the emitting component of the ball by tying it to its movement accross the different axis, expanding its range and intensity as speed picks up. Allows for fast movement to illuminate more but be less controllable.
