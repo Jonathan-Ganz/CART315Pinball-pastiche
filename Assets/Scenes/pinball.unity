@@ -2076,6 +2076,7 @@ GameObject:
   - component: {fileID: 484584535}
   - component: {fileID: 484584534}
   - component: {fileID: 484584536}
+  - component: {fileID: 484584537}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -2183,8 +2184,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.3254717, g: 0.88305676, b: 1, a: 1}
-  m_Intensity: 3
-  m_Range: 20
+  m_Intensity: 2
+  m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2228,7 +2229,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 89ff19d667a6a5d4bb76df1fcb718402, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2303,8 +2304,8 @@ TrailRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
-  m_Autodestruct: 1
-  m_Emitting: 0
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!114 &484584536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2318,6 +2319,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &484584537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484584528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db414efde095440e9b11400a62c54cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ball: {fileID: 484584528}
+  speed: 3
+  Light: {fileID: 0}
+  lightComp: {fileID: 484584534}
 --- !u!43 &628573818
 Mesh:
   m_ObjectHideFlags: 0
@@ -5022,15 +5039,15 @@ PrefabInstance:
       propertyPath: thescore
       value: 
       objectReference: {fileID: 949918269}
-    - target: {fileID: 904357904443146694, guid: f15e24134e0043a459da871096c72e7c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1210ed5f2dddc04f92505f83d1e39ed, type: 2}
     - target: {fileID: 902770723460750299, guid: f15e24134e0043a459da871096c72e7c,
         type: 3}
       propertyPath: m_Volume
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 904357904443146694, guid: f15e24134e0043a459da871096c72e7c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1210ed5f2dddc04f92505f83d1e39ed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f15e24134e0043a459da871096c72e7c, type: 3}
