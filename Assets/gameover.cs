@@ -6,17 +6,19 @@ public class gameover : MonoBehaviour
 {
     private Vector3 initialposition;
     public GameObject theball;
+   
 
     // Start is called before the first frame update
     void Start()
     {
         initialposition = theball.transform.position;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        initialposition = theball.GetComponent<CollisionLight>().GetRespawn();
     }
 
     private void OnTriggerEnter(Collider collider)
